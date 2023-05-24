@@ -29,9 +29,18 @@ html {
         
 }
 
+#page > main {
+    grid-area: main;
+        
+}
+
 #nav:a {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    padding-top: 20 px;
+    padding-right: 20 px;
+
     
     
 }
