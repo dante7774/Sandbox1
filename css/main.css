@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-areas:
+      "nav nav nav"
+      "main main main"
+      "foot foot foot";
+    grid-template-rows: 100px ;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+#page > header {
+    grid-area: head;
+}
+
+#page > nav {
+    grid-area: nav;
+        
+}
+
+#page > footer {
+    grid-area: foot;
+    
+}
