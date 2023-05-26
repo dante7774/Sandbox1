@@ -5,6 +5,7 @@
 }
 
 html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 
@@ -15,9 +16,16 @@ html {
     grid-template-areas:
       "head nav nav"
       "main main main"
-      "foot foot foot";
+      "foot1 foot1 foot2";
     grid-template-rows: minmax(50px 1fr) minmax(300px 7fr) 2fr;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 2fr;
+}
+
+.breadcrumb {
+    color: gray;
+    font-size: small;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 #page > header {
@@ -26,31 +34,65 @@ html {
     padding-top: 20px;
     font-size: large;
     color: black;
+    background-color: rgb(193, 193, 193);
     text-align: center;
     
 }
 
 #page > nav {
-    height: 60px;
+    
     grid-area: nav;
-    background-color: rgb(91, 91, 91);
+    background-color: rgb(193, 193, 193);
         
 }
 
 #page > main {
     grid-area: main;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(233, 233, 233); 
         
 }
 
+/* --- FOOTER --- */
+#page > footer1 {
+    grid-area: foot1;
+    background-color: rgb(93, 138, 252);
+    
+}
+
+#page > footer2 {
+    grid-area: foot2;
+    background-color: rgb(143, 175, 254);
+
+}
+
+footer2 a {
+    display: block;
+    padding: 5px 10px 10px;
+    text-decoration: none;
+}
+
+footer2 a:active {
+    color: rgb(12, 119, 201);
+}
+
+footer2 a:visited {
+    color: orange;
+}
+
+footer2 a:hover {
+    color: red;
+}
+
+footer1 {
+    padding: 10px 10px 10px;
+}
+
+
+/* --- NAV BAR --- */
 .navBar {
     display: flex;
-    padding-top: 10px;
     justify-content: right;
 
-
-
-    
 }
 
 .navBar a {
@@ -66,8 +108,27 @@ html {
     margin-right: 20px;
 }
 
-#page > footer {
-    grid-area: foot;
-    background-color: rgb(134, 134, 255);
-    
+/* --- BODY --- */
+main > section {
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+
+main > section h2 {
+    color: red
+}
+
+main > section p {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.blueArticle {
+    height: 200px;
+    background-color: rgb(106, 106, 255);
+}
+
+
+/* --- MOBILE --- */
