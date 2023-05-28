@@ -127,13 +127,23 @@ main > section p {
 }
 
 .blueSection {
-    height: minmax (200px 600px);
-    background-color: rgb(106, 106, 255);
+    height: minmax (200px 1000px);
+    /* background-color: rgba(106, 106, 255, .2); */
+    background-image: url('./images/soccer1.jpg');
+    background-position: center;
 }
 
 .graySection {
-    height: minmax (200px 600px);
-    background-color: rgb(150, 150, 150);
+    height: minmax (200px 1000px);
+    background-color: rgba(150, 150, 150, .2);
+    background-image: url("./images/soccer2.jpg");
+    background-position: center;
+}
+
+.testBackground {
+    height: 500px;
+    background-image: url("images/soccer1.jpg");
+    background-position: center;
 }
 
 
