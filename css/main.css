@@ -24,8 +24,9 @@ html {
 .breadcrumb {
     color: gray;
     font-size: small;
-    padding-left: 10px;
+    padding-left: 5%;
     padding-top: 5px;
+    padding-bottom: 15px;
     height: 20px;
 }
 
@@ -35,7 +36,7 @@ html {
     padding-top: 20px;
     font-size: large;
     color: black;
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     
 }
@@ -43,26 +44,36 @@ html {
 #page > nav {
     
     grid-area: nav;
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(255, 255, 255);
         
 }
 
 #page > main {
     grid-area: main;
-    background-color: rgb(233, 233, 233); 
+    background-color: rgb(255, 255, 255); 
         
 }
 
 /* --- FOOTER --- */
+.line1 {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
 #page > footer1 {
     grid-area: foot1;
-    background-color: rgb(93, 138, 252);
+    background-color: rgb(255, 255, 255);
+    padding-left: 10%;
+    padding-top: 25px;
+    font-size: small;
     
 }
 
 #page > footer2 {
     grid-area: foot2;
-    background-color: rgb(143, 175, 254);
+    background-color: rgb(255, 255, 255);
+    padding-top: 25px;
 
 }
 
@@ -72,16 +83,20 @@ footer2 a {
     text-decoration: none;
 }
 
+footer2 a:link {
+    color: rgb(0, 0, 0);
+}
+
 footer2 a:active {
-    color: rgb(12, 119, 201);
+    color: rgb(255, 208, 0);
 }
 
 footer2 a:visited {
-    color: orange;
+    color: rgb(0, 0, 0);
 }
 
 footer2 a:hover {
-    color: red;
+    color: rgb(96, 76, 0);
 }
 
 footer1 {
@@ -90,6 +105,14 @@ footer1 {
 
 
 /* --- NAV BAR --- */
+.navLine {    
+    height: 1px;
+    width: 80%;
+    margin-left: auto;
+    background-color: rgb(218, 218, 218);
+
+}
+
 .navBar {
     display: flex;
     justify-content: right;
@@ -102,11 +125,15 @@ footer1 {
     height: 40px;
     width: auto;
     justify-self: center;
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: rgb(218, 218, 218);
+    color: rgb(94, 94, 94);
     text-decoration: none;
     padding: 20px 20px 0px;
     margin-right: 20px;
+}
+
+.navBar a:hover {
+    color: rgb(228, 184, 5);
 }
 
 /* --- BODY --- */
@@ -115,10 +142,12 @@ main > section {
     padding-right: 15%;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    color: black;
 }
 
 main > section h2 {
-    color: red
+    color: rgb(85, 85, 85)     
 }
 
 main > section p {
@@ -126,25 +155,35 @@ main > section p {
     padding-bottom: 25px;
 }
 
-.blueSection {
-    height: minmax (200px 1000px);
-    /* background-color: rgba(106, 106, 255, .2); */
-    background-image: url('./images/soccer1.jpg');
-    background-position: center;
+.welcome {
+    min-height: 400px;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgba(195, 143, 0, 0.75)), url("../images./soccer1.jpg");
+    background-position: top;
+    background-size: cover;
 }
 
-.graySection {
-    height: minmax (200px 1000px);
-    background-color: rgba(150, 150, 150, .2);
-    background-image: url("./images/soccer2.jpg");
+.upcomingEvents {
+    min-height: 400px;
+    background: linear-gradient(270deg, rgb(255, 255, 255), rgba(195, 143, 0, 0.75)), url("../images./soccer2.jpg");
     background-position: center;
+    background-size: cover; 
+}
+
+.pastEvents {
+    min-height: 400px;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgba(195, 143, 0, 0.75)), url("../images./soccer3.jpg");
+    background-position: center;
+    background-size: cover; 
 }
 
 .testBackground {
-    height: 500px;
-    background-image: url("images/soccer1.jpg");
+    height: 250px;
+    background: linear-gradient(45deg, rgba(254, 1, 149, 0.966), rgba(255, 0, 150, 0.3)), url("../images./soccer1.jpg");
     background-position: center;
+    background-size: cover;     
+
+    
 }
 
 
-/* --- MOBILE --- */
+/* --- MOBILE --- */    
