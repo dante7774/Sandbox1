@@ -26,6 +26,7 @@ html {
     font-size: small;
     padding-left: 10px;
     padding-top: 5px;
+    height: 20px;
 }
 
 #page > header {
@@ -125,9 +126,14 @@ main > section p {
     padding-bottom: 25px;
 }
 
-.blueArticle {
-    height: 200px;
+.blueSection {
+    height: minmax (200px 600px);
     background-color: rgb(106, 106, 255);
+}
+
+.graySection {
+    height: minmax (200px 600px);
+    background-color: rgb(150, 150, 150);
 }
 
 
