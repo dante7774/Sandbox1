@@ -1,0 +1,20 @@
+.aboutUsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsContainer img {
+    width: 200px;
+    background-color: rgba(255, 217, 29, 0.315);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    margin: 20px;
+}
+
+.aboutUsContainer p {
+    width: 70%;
+    padding-left: 20px;
+}
