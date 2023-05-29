@@ -7,6 +7,7 @@
     <title>Test Site</title>
 
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gallery.css">
 </head>
 <section id="page">
 
@@ -20,23 +21,50 @@
             <a href="./index.html">Home</a>
             <a href="./gallery.html">Gallery</a>
             <a href="./aboutUs.html">About Us</a>
-            <a href="./conatactUs.html">Contact Us</a>
+            <a href="./contactUs.html">Contact Us</a>
         </div>
         <div class="navLine"></div>  
     </nav>
 
+<!-- EDITABLE SECTION -->
     <main>
-        <div class="breadcrumb">
-            Home / Gallery
-        </div>
+    <div class="breadcrumb">
+        Home / Gallery
+    </div>
 
-            
+        <section class="gallery">
+            <div class="imgContainer">
+                
+                <div class="imageCard">
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="./images/soccer4.webp" alt="Women playing soccer" style="width:100%;max-width:300px">
 
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
 
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
 
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
 
-          <div class="line1"></div>
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>    
+                    </div>
+                </div>
+
+                <div class="imageCard">
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="./images/soccer5.webp" alt="Battle for the ball" style="width:100%;max-width:300px">
+                </div>
+
+            </div>
+        </section>  
+
+        <div class="line1"></div>
     </main>
+
+<!-- END OF EDITABLE SECTION -->
 
     
 
@@ -55,9 +83,12 @@
             <a href="./index.html">Home</a>
             <a href="./gallery.html">Gallery</a>
             <a href="./aboutUs.html">About Us</a>
-            <a href="./conatactUs.html">Contact Us</a>
+            <a href="./contactUs.html">Contact Us</a>
         </div>
     </footer2>
 
 </section>
+
+<script src="./js/modal.js"></script>
+
 </html>
