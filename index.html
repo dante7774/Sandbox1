@@ -7,6 +7,7 @@
     <title>Test Site</title>
 
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <section id="page">
 
@@ -16,13 +17,16 @@
 
 
     <nav>
-        <div class="navBar">
-            <a href="./index.html">Home</a>
+        <div class="navBar" id="myNavBar">
+            <a href="./index.html" class="active">Home</a>
             <a href="./gallery.html">Gallery</a>
             <a href="./aboutUs.html">About Us</a>
             <a href="./contactUs.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                <i class="fa fa-bars"></i>
+                </a>
         </div>
-        <div class="navLine"></div>  
+        <div class="navLine"></div> 
     </nav>
 
     <main>
@@ -91,4 +95,7 @@
     </footer2>
 
 </section>
+
+<script src="./js/mobileNav.js"></script>
+
 </html>
